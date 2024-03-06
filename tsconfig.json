@@ -1,28 +1,27 @@
 {
   "compilerOptions": {
     /* Language and Environment */
-    "target": "es5", // JavaScript 코드의 ECMAScript 버전 설정
-    "lib": ["dom", "dom.iterable", "esnext"], // TypeScript 컴파일러가 사용할 라이브러리를 설정
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
 
     /* Modules */
-    "module": "esnext", // JavaScript 모듈 생성
-    "moduleResolution": "node", // Node.js의 모듈 해석 알고리즘 사용
-    "baseUrl": ".", // 모듈을 해석할 때 상대 경로의 기준이 되는 기본 경로 설정
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }, // 모듈 경로 별칭 설정
+    },
 
     /* Emit */
-    "declaration": true, // TypeScript .d.ts 타입 선언 파일 생성
-    "outDir": "dist", // 컴파일된 JavaScript 파일들이 저장될 디렉토리 설정
+    "declaration": true,
+    "outDir": "dist",
 
     /* Type Checking */
-    "strict": true, // TypeScript의 엄격한 모드 활성화 (타입 검사 강화 및 안전성 향상)
+    "strict": true,
 
     /* Completeness */
-    "skipLibCheck": true // 외부 라이브러리의 선언 파일을 검사하지 않도록 설정(컴파일 속도 관련)
+    "skipLibCheck": true
   },
-
-  "include": ["src"], // 컴파일할 파일 지정
-  "exclude": ["**/*.test.ts"] // 컴파일에서 제외할 파일 지정
+  "include": ["src"],
+  "exclude": ["**/*.test.ts"]
 }
